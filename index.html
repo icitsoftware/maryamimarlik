@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Marya Mimarlık — Taş ev ve tarihi yapı restorasyonu. Uzun ömürlü taş işçiliği ve mimari danışmanlık."
+    />
+    <title>Marya Mimarlık | Taş Ev Restorasyonu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="intro" class="intro" data-stage="1" aria-live="polite">
+      <button type="button" class="intro__skip">Atla</button>
+      <div class="intro__noise" aria-hidden="true"></div>
+
+      <div class="intro__wipe-wrap">
+        <div class="intro__layer intro__layer--before" aria-hidden="true">
+          <img
+            src="images/569810996_18085148123503266_3584094041338547789_n.jpg"
+            alt=""
+            width="1920"
+            height="1080"
+          />
+        </div>
+        <div class="intro__blueprint" aria-hidden="true"></div>
+        <div class="intro__layer intro__layer--after" aria-hidden="true">
+          <img
+            src="images/569810996_18085148123503266_3584094041338547789_n.jpg"
+            alt=""
+            width="1920"
+            height="1080"
+          />
+        </div>
+        <div class="intro__shine" aria-hidden="true"></div>
+      </div>
+
+      <div class="intro__ambience" aria-hidden="true"></div>
+
+      <div class="intro__cracks" aria-hidden="true">
+        <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <path
+            class="intro__crack intro__crack--a"
+            d="M80 120 L180 280 L160 420 L220 580 L140 720 M320 60 L380 200 L340 380 L400 520 M520 100 L480 300 L540 480 L500 680 M720 200 L780 360 L740 520 L800 700 M920 80 L960 260 L900 440 L980 620"
+            fill="none"
+            stroke="rgba(12,8,4,0.72)"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="intro__crack intro__crack--b"
+            d="M200 500 L350 480 L500 520 L680 500 M100 650 L280 620 L460 640 L640 660 M880 300 L1020 340 L1080 360"
+            fill="none"
+            stroke="rgba(30,22,14,0.55)"
+            stroke-width="2.4"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <div class="intro__scaffold" aria-hidden="true">
+        <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 0 L1200 620 L1200 800 L0 180 Z" fill="none" stroke="rgba(255,245,230,0.14)" stroke-width="1.6" />
+          <path d="M0 200 L900 0 L1200 400 L1200 800 L300 800 Z" fill="none" stroke="rgba(255,245,230,0.11)" stroke-width="1.3" />
+          <line x1="0" y1="520" x2="1200" y2="280" stroke="rgba(255,245,230,0.12)" stroke-width="1.4" />
+          <line x1="150" y1="0" x2="400" y2="800" stroke="rgba(255,245,230,0.1)" stroke-width="1.2" />
+          <line x1="850" y1="0" x2="950" y2="800" stroke="rgba(255,245,230,0.1)" stroke-width="1.2" />
+        </svg>
+      </div>
+
+      <div class="intro__scan" aria-hidden="true">
+        <div class="intro__scan-line"></div>
+        <svg class="intro__corners" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 40 H90 M40 40 V90" stroke="rgba(201,184,150,0.5)" stroke-width="2" fill="none" />
+          <path d="M1160 40 H1110 M1160 40 V90" stroke="rgba(201,184,150,0.5)" stroke-width="2" fill="none" />
+          <path d="M40 760 H90 M40 760 V710" stroke="rgba(201,184,150,0.5)" stroke-width="2" fill="none" />
+          <path d="M1160 760 H1110 M1160 760 V710" stroke="rgba(201,184,150,0.5)" stroke-width="2" fill="none" />
+        </svg>
+      </div>
+
+      <div class="intro__vignette" aria-hidden="true"></div>
+
+      <div class="intro__mortar" aria-hidden="true">
+        <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img">
+          <path
+            class="brick-line"
+            d="M20 40 H180 M200 40 H380 M40 80 H160 M180 80 H360 M20 120 H200 M220 120 H380 M60 160 H200 M220 160 H340 M30 200 H170 M190 200 H370"
+          />
+          <path
+            class="brick-line"
+            d="M200 20 V220 M100 60 V180 M300 50 V190"
+          />
+          <path class="brick-line" d="M20 60 H380 M20 100 H380 M20 140 H380 M20 180 H380" />
+          <path class="brick-line" d="M80 30 V210 M160 40 V200 M240 35 V205 M320 45 V195" />
+          <path class="brick-line" d="M50 70 Q200 55 350 70 M50 110 Q200 95 350 110" />
+          <path class="brick-line" d="M120 150 Q200 165 280 150" />
+        </svg>
+      </div>
+
+      <div class="intro__chisel" aria-hidden="true"></div>
+      <div class="intro__dust" aria-hidden="true"></div>
+      <div class="intro__surface-veil" aria-hidden="true"></div>
+      <div class="intro__derz-band" aria-hidden="true"></div>
+
+      <div class="intro__hud">
+        <div class="intro__lottie-wrap" aria-hidden="true">
+          <div id="intro-lottie" class="intro__lottie"></div>
+        </div>
+        <p class="intro__brand">Marya Mimarlık</p>
+        <p class="intro__tag">Taş ev restorasyonu</p>
+        <ol class="intro__rail" id="intro-rail" aria-label="Restorasyon aşamaları">
+          <li><span class="intro__rail-dot"></span><span class="intro__rail-label">Analiz</span></li>
+          <li><span class="intro__rail-dot"></span><span class="intro__rail-label">Plan</span></li>
+          <li><span class="intro__rail-dot"></span><span class="intro__rail-label">Örgü</span></li>
+          <li><span class="intro__rail-dot"></span><span class="intro__rail-label">Yüzey</span></li>
+          <li><span class="intro__rail-dot"></span><span class="intro__rail-label">Teslim</span></li>
+        </ol>
+        <p class="intro__status" id="intro-status">
+          <span class="intro__status-phase">1 / 5</span>
+          <span class="intro__status-text">Analiz: taş yüzeyi, derzler ve çatlaklar haritalanıyor.</span>
+        </p>
+        <div class="intro__bar" aria-hidden="true">
+          <div class="intro__bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <header class="hero">
+        <nav class="navbar navbar-expand-md navbar-dark hero-nav">
+          <div class="container">
+            <a class="navbar-brand" href="#">Marya Mimarlık</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#anaMenu"
+              aria-controls="anaMenu"
+              aria-expanded="false"
+              aria-label="Menüyü aç"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="anaMenu">
+              <ul class="navbar-nav ms-auto gap-md-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#hizmetler">Hizmetler</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galeri">Galeri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#iletisim">İletişim</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade hero-carousel"
+          data-bs-ride="false"
+          data-bs-interval="3000"
+          data-bs-pause="false"
+          data-bs-wrap="true"
+          aria-label="Öne çıkan taş ev görselleri"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 hero-carousel__img"
+                src="images/561990060_18083857856503266_3056734805247953750_n.jpg"
+                alt="Restorasyonu tamamlanmış taş cephe"
+                width="1920"
+                height="1080"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 hero-carousel__img"
+                src="images/569810996_18085148123503266_3584094041338547789_n.jpg"
+                alt="Taş işçiliği ve cephe dokusu"
+                width="1920"
+                height="1080"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 hero-carousel__img"
+                src="images/562997027_18083857820503266_2407379155674778278_n.jpg"
+                alt="Taş ev dış görünümü"
+                width="1920"
+                height="1080"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 hero-carousel__img"
+                src="images/564044942_18083857829503266_3718865906767492939_n.jpg"
+                alt="Tarihi taş yapı restore"
+                width="1920"
+                height="1080"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="hero__overlay" aria-hidden="true"></div>
+          <div class="carousel-indicators hero-carousel__dots">
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slayt 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slayt 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slayt 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slayt 4"
+            ></button>
+          </div>
+        </div>
+
+        <div class="container hero__inner">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9 text-center text-md-start">
+              <h1>Taşı yaşatan restorasyon</h1>
+              <p class="hero__lead mx-auto mx-md-0">
+                Tarihi taş yapıları özenle analiz ediyor, özgün detayları koruyarak uzun ömürlü ve
+                nefes alan cepheler inşa ediyoruz. Taş evlerinizi geleceğe taşıyoruz.
+              </p>
+              <div class="hero__cta d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                <a class="marya-btn marya-btn--primary" href="#iletisim">Keşif talep et</a>
+                <a class="marya-btn marya-btn--ghost" href="#hizmetler">Hizmetler</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="hizmetler" class="section section--alt">
+        <div class="container">
+          <p class="section__label">Ne yapıyoruz</p>
+          <h2>Uzmanlık alanlarımız</h2>
+          <p class="section__intro">
+            Geleneksel taş örgü teknikleri, doğru harç seçimi ve su yalıtımı ile bir arada
+            düşünülen restorasyon çözümleri sunuyoruz.
+          </p>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="card h-100">
+                <h3>Taş cephe &amp; örgü</h3>
+                <p>
+                  Orijinal doku ve renk uyumu için yerel taş seçimi, örgü detayları ve derz
+                  uygulamaları.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="card h-100">
+                <h3>Tarihi yapı onarımı</h3>
+                <p>
+                  Kayıtlı ve geleneksel yapılarda rölöve, güçlendirme ve malzeme uyumluluğu
+                  danışmanlığı.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="card h-100">
+                <h3>Taş ev yenileme</h3>
+                <p>
+                  Konfor, ısı ve nem yönetimi ile birlikte planlanan taş konut restorasyonları.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="card h-100">
+                <h3>Proje &amp; şantiye</h3>
+                <p>
+                  Keşiften uygulamaya şeffaf süreç: zaman planı, malzeme listesi ve iş
+                  takibi.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeri" class="section">
+        <div class="container">
+          <p class="section__label">İşlerimizden</p>
+          <h2>Seçili çalışmalar</h2>
+          <p class="section__intro">
+            Sahadan fotoğraflar; her yüzey binanın hikâyesinin bir parçasıdır.
+          </p>
+          <div class="row g-3 gallery">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/475952918_1324072015301246_5195257253872047288_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/475952918_1324072015301246_5195257253872047288_n.jpg" alt="Taş yapı detay çalışması" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/476552599_18056454239503266_3636374450099768899_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/476552599_18056454239503266_3636374450099768899_n.jpg" alt="Taş duvar ve cephe" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/476846519_18056454230503266_742126443639475556_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/476846519_18056454230503266_742126443639475556_n.jpg" alt="Restorasyon süreci" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/476890628_18056454209503266_7206306411872677047_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/476890628_18056454209503266_7206306411872677047_n.jpg" alt="Taş işçiliği" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/476891539_18056454227503266_2371744010858440556_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/476891539_18056454227503266_2371744010858440556_n.jpg" alt="Yapı cephesi" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/562997027_18083857820503266_2407379155674778278_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/562997027_18083857820503266_2407379155674778278_n.jpg" alt="Taş ev dış görünüm" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/564044942_18083857829503266_3718865906767492939_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/564044942_18083857829503266_3718865906767492939_n.jpg" alt="Taş yapı restore" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/569725425_18085148177503266_3642168790339379981_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/569725425_18085148177503266_3642168790339379981_n.jpg" alt="Masonry detay" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <a href="images/569810996_18085148123503266_3584094041338547789_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="images/569810996_18085148123503266_3584094041338547789_n.jpg" alt="Tamamlanmış taş cephe" loading="lazy" width="800" height="600" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim" class="section section--alt">
+        <div class="container">
+          <div class="contact">
+            <p class="section__label">İletişim</p>
+            <h2>Projenizi birlikte ele alalım</h2>
+            <p>
+              Keşif, ön değerlendirme ve teknik özet için bizimle iletişime geçin. E-posta
+              adresinizi ve telefonunuzu buraya ekleyebilirsiniz.
+            </p>
+            <p><strong>E-posta:</strong> <span>info@maryamimarlik.example</span></p>
+            <p><strong>Telefon:</strong> <span>+90 (___) ___ __ __</span></p>
+            <a class="marya-btn marya-btn--primary" href="mailto:info@maryamimarlik.example">E-posta gönder</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p class="mb-0">&copy; Marya Mimarlık — Taş ev restorasyonu</p>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
